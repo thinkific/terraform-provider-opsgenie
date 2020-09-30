@@ -178,7 +178,8 @@ resource "opsgenie_user" "test" {
   full_name = "Acceptance Test User"
   role      = "User"
   locale    = "en_GB"
-  timezone = "Europe/Rome"
+  timezone  = "Europe/Rome"
+  tags      = ["SME"]
 }
 `, rString)
 }
